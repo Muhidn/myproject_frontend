@@ -1,0 +1,27 @@
+<button class="btn-new" routerLink="/retreive">Add New User</button>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.userID}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.phoneNumber}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.role}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>

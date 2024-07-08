@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px; /* Reduced margin to decrease space */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 3px; /* Further reduced margin to decrease space */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 6px 10px; /* Adjusted padding to decrease height */
+    font-size: 14px; /* Adjusted font size */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px 0; /* Reduced padding to decrease height */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  button[type="submit"]:active {
+    background-color: #004494;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 576px) {
+    .form-container {
+      padding: 20px;
+    }
+  
+    .form-title {
+      font-size: 22px;
+    }
+  
+    .form-group label {
+      font-size: 14px;
+    }
+  
+    .form-group input {
+      padding: 6px 10px; /* Reduced padding to decrease height for smaller screens */
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 8px 0; /* Reduced padding to decrease height for smaller screens */
+      font-size: 16px;
+    }
+  }

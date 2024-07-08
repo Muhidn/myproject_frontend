@@ -1,0 +1,55 @@
+/* Container for centering */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* 80% of the viewport height */
+  padding-top: 10vh; /* 10% padding on top */
+  padding-bottom: 10vh; /* 10% padding on bottom */
+}
+
+/* Styling for the "Add New User" button */
+.btn-new {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around text */
+  cursor: pointer; /* Cursor style */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline-block */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin-bottom: 20px; /* Space below the button */
+}
+
+.btn-new:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+
+/* Styling for the table */
+table {
+  width: 80%; /* Reduced width of the table */
+  border-collapse: collapse; /* Collapse table borders */
+  border-radius: 4px; /* Rounded corners for table */
+  overflow: hidden; /* Hide overflow content */
+}
+
+table th, table td {
+  border: 1px solid #ddd; /* Gray border */
+  padding: 8px; /* Padding inside cells */
+  text-align: left; /* Left-align text */
+}
+
+table th {
+  background-color: #007bff; /* Blue background for header */
+  color: white; /* White text for header */
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1; /* Hover color for rows */
+}
