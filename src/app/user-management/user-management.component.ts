@@ -10,9 +10,13 @@ import { User } from '../user';
   styleUrls: ['./user-management.component.css']
 })
 export class UserManagementComponent implements OnInit {
+  userservice: any;
+deleteUser(arg0: any) {
+throw new Error('Method not implemented.');
+}
   users:any;
   user: any;
-
+deleteuser:any
   constructor(
     private userService: UserService,
    
@@ -34,6 +38,5 @@ export class UserManagementComponent implements OnInit {
       }
     );
   }
-  
- 
+   
 }

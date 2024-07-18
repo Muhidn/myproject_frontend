@@ -21,7 +21,10 @@
         <td>{{user.email}}</td>
         <td>{{user.password}}</td>
         <td>{{user.role}}</td>
-        <td></td>
+        <td>
+        <button class="btn btn-sm btn-update" routerLink="/update/{{user.userID}}">Edit</button>
+        <button class="btn btn-sm btn-delete" (click)="deleteUser(user.userID)">Delete</button>
+        </td>
       </tr>
     </tbody>
 </table>

@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { UserManagementComponent } from './user-management/user-management.component';
 import { RetreiveComponent } from './retreive/retreive.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { RetreiveComponent } from './retreive/retreive.component';
     ScheduleComponent,
     UserManagementComponent,
     RetreiveComponent,
+    UpdateUserComponent,
   ],
   imports: [
     BrowserModule,

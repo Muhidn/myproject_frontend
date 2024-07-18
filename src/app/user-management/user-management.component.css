@@ -1,55 +1,74 @@
-/* Container for centering */
-.container {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;
-  justify-content: center;
-  height: 80vh; /* 80% of the viewport height */
-  padding-top: 10vh; /* 10% padding on top */
-  padding-bottom: 10vh; /* 10% padding on bottom */
-}
-
-/* Styling for the "Add New User" button */
 .btn-new {
-  background-color: #007bff; /* Blue background color */
-  color: #fff; /* White text color */
-  border: none; /* No border */
-  padding: 10px 20px; /* Padding around text */
-  cursor: pointer; /* Cursor style */
-  border-radius: 4px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Display as inline-block */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
-  margin-bottom: 20px; /* Space below the button */
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-new:hover {
-  background-color: #0056b3; /* Darker blue when hovering */
+  background-color: #0056b3;
 }
 
-/* Styling for the table */
 table {
-  width: 80%; /* Reduced width of the table */
-  border-collapse: collapse; /* Collapse table borders */
-  border-radius: 4px; /* Rounded corners for table */
-  overflow: hidden; /* Hide overflow content */
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
-  border: 1px solid #ddd; /* Gray border */
-  padding: 8px; /* Padding inside cells */
-  text-align: left; /* Left-align text */
+thead {
+  background-color: #007bff;
+  color: white;
 }
 
-table th {
-  background-color: #007bff; /* Blue background for header */
-  color: white; /* White text for header */
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9; /* Alternate row background color */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-table tbody tr:hover {
-  background-color: #f1f1f1; /* Hover color for rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-update {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+}
+
+.btn-update:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
 }
